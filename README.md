@@ -1,36 +1,72 @@
+![Picture1](https://github.com/brankovicvukasin/FairShare-Faculty-Project/blob/main/finish1.png "pic1")
 
-# FairShare: Expense Sharing Simplified
-
-## About FairShare
-
-FairShare is a dynamic web application designed to alleviate the stress of splitting expenses among friends, especially during group activities like travel and concerts. Utilizing the latest in web development technologies, FairShare offers a seamless experience for users to manage, share, and track expenses effortlessly.
+FairShare is a web application designed to simplify the process of sharing expenses among friends and groups. This application automates expense sharing, allowing users to focus on enjoying their shared experiences without the hassle of financial management. With features like group creation, expense addition, analytics, and an interactive expense map, FairShare offers a solution for managing shared expenses efficiently.
 
 ## Features
 
-- **Automated Expense Splitting**: FairShare automatically divides expenses, making the process efficient and straightforward.
-- **Currency Conversion**: Supports multiple currencies, providing real-time conversion rates to ensure accurate expense tracking.
-- **Interactive Expense Map**: Visualize shared expenses on a map, offering a unique overview of spending by location.
-- **Debt Management**: Keep track of what you owe and what is owed to you, simplifying debts among friends.
+- **User Authentication**: Secure login through Google OAuth 2.0, ensuring user data protection.
+- **Dashboard**: A user-friendly interface displaying overall expense statistics and quick access to main features.
+- **Friend Management**: Users can add friends, see a list of friends, and manage friendships directly.
+- **Group Activities**: Create groups for specific events or shared interests to manage expenses more effectively.
+- **Expense Management**: Add, view, and settle expenses within groups or between friends. Supports multi-currency transactions with real-time currency conversion.
+- **Analytics**: Visual representations of expenses for better insight and budget management.
+- **Interactive Expense Map**: View locations of shared experiences and expenses on a map, enhancing the planning and reminiscing of shared memories.
+- **Responsive Design**: Fully responsive interface, ensuring usability across various devices and screen sizes.
 
-## Technologies
+![Picture2](https://github.com/brankovicvukasin/FairShare-Faculty-Project/blob/main/finish2.png "pic2")
 
-Built with the MERN stack:
-- **Frontend**: React.js for a responsive and interactive UI.
-- **Backend**: Node.js and Express.js for robust server-side logic.
-- **Database**: MongoDB for flexible and scalable data storage.
+## Technologies Used
+
+- **Frontend**: React.js, Tailwind CSS, React Leaflet, React Google Charts
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB with Mongoose for data modeling
+- **Authentication**: Google OAuth 2.0, JWT token
+- **APIs**: Giphy API for dynamic content, currency conversion API for real-time rates
 
 ## Getting Started
 
-To run FairShare locally, ensure you have Node.js and MongoDB installed. Clone the repository, install dependencies with `npm install`, and start the application with `npm start`. Detailed instructions are available in the repository's documentation.
+### Prerequisites
 
-## Contribute
+- Node.js (v14 or newer)
+- MongoDB (local setup or MongoDB Atlas)
+- Google OAuth 2.0 client ID
 
-FairShare is open for contributions! Whether it's feature requests, bug reports, or code contributions, we welcome your input to make FairShare even better.
+### Installation
 
-## License
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-github/fairshare.git
+   cd fairshare
+   ```
+2. Install backend dependencies:
+   ```bash
+   cd backend
+   npm install
+   ```
+3. Install frontend dependencies:
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+4. Setup environment variables:
+   - Create a `.env` file in the backend directory.
+   - Add your MongoDB URI, Google client ID, and any other required API keys.
+5. Start the backend server:
+   ```bash
+   npm start
+   ```
+6. Start the frontend application:
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
-FairShare is released under the MIT License. Feel free to use, modify, and distribute the application as per the license terms.
+The application should now be running and accessible at http://localhost:3000.
 
----
+## Usage
 
-FairShare simplifies expense sharing, making group activities more enjoyable by focusing on the experience rather than the logistics of financial management.
+- **Login**: Use your Google account to login.
+- **Dashboard**: Navigate through the dashboard to access different features.
+- **Friends and Groups**: Start by adding friends and creating groups.
+- **Managing Expenses**: Add new expenses within a group or between friends.
+- **Analytics and Map**: Use the analytics feature and expense map for insights.
